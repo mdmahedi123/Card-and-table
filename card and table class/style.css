@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: #eaeaea;
+  color: #444;
+  font-size: 1.2rem;
+}
+
+img {
+  width: 260px;
+}
+
+img:hover {
+  filter: grayscale(0.3);
+}
+
+.card-container {
+  margin: 100px auto;
+  background: white;
+  max-width: 500px;
+  height: 700px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #beb9b9, -5px -5px 10px #fcfafa;
+  padding: 25px;
+}
+
+.card-container .card-img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin: 15px auto;
+  border-radius: 50%;
+  outline: 3px solid tomato;
+  outline-offset: 10px;
+}
+
+.card-container .card-details {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.card-container .card-details h2 {
+  font-size: 2.6rem;
+  letter-spacing: 3px;
+}
+
+.card-container .card-details p {
+  font-size: 1.2rem;
+  text-align: justify;
+  margin: 0px 0 20px;
+}
+.card-container .card-details .propasion {
+  color: tomato;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.card-details a {
+  text-decoration: none;
+  display: inline-block;
+  background: tomato;
+  color: white;
+  padding: 10px 30px;
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.card-details a:hover {
+  border: 2px solid #444;
+  color: #444;
+  background: transparent;
+}
+.card-details a:active {
+  outline: 3px solid rgba(255, 99, 71, 0.473);
+}
+
+/*table css start*/
+
+table {
+  background-color: lavenderblush;
+  margin: 50px auto;
+  border-radius: 7px;
+  box-shadow: 5px 5px 20px #444;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid #444;
+  cursor: pointer;
+}
+tr:nth-child(even) {
+  background-color: rgb(223, 222, 222);
+}
+
+tbody tr td:nth-child(3) {
+  text-align: center;
+}
+tbody tr td:nth-child(4) {
+  text-align: right;
+}
+tbody tr td:nth-child(5) {
+  text-align: center;
+}
+
+tbody tr td:first-child {
+  color: green;
+}
+
+tbody tr td:last-child {
+  display: inline-block;
+  background-color: green;
+  padding: 4px 5px;
+  margin: 10px auto;
+  color: white;
+}
+
+th,
+td {
+  letter-spacing: 2px;
+  padding: 18px;
+}
+th {
+  text-transform: uppercase;
+}
+
+.not-received td:last-child {
+  background-color: brown;
+}
+.under-shipment td:last-child {
+  background-color: #b6b605;
+}
+tbody tr:last-child {
+  border-bottom: none;
+}
